@@ -1,10 +1,6 @@
 # Address Book Application
 
-<center>
-
 ![Alt Text](./src/assets/images/address-book-thumbnail.png)
-
-</center>
 
 This is an address book application to allow users to:
 
@@ -18,8 +14,6 @@ This is an address book application to allow users to:
 The data used in the application is generated using the https://randomuser.me/ api.
 
 ## Installation
-
----
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,8 +62,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Assignment Summary
 
----
-
 ### Overall Approach
 
 The overall approach to the project was to first understand the minimum requirements of the challenge.
@@ -96,6 +88,7 @@ Given more time I would have liked to complete the following:
   - time to complete (1 day)
 - Include a scrolling side bar to quickly access contacts with the first letter of the last name
   - time to complete (1 day)
+- Integrate CI/CD (1 day)
 
 ### Given more time, what else would you have done to make the project more robust?
 
