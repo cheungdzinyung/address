@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Router from "./routes/Routes";
+import { useFetchAllUsers } from "./api/Request";
+import "./App.css";
+import loading from "./assets/images/loading.gif";
 
 function App() {
+  const { users, isLoading, hasError } = useFetchAllUsers();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {hasError && <p>Something went wrong</p>}
+      {isLoading ? (
+        <div id="spinner">
+          <img src={loading} alt="loading" />
+        </div>
+      ) : (
+        <Router users={users} />
+      )}
     </div>
   );
 }
