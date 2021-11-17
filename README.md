@@ -18,11 +18,14 @@ The data used in the application is generated using the https://randomuser.me/ a
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This project will require the following software to be installed to function:
-- [Node.js](https://nodejs.org/en/download/)
+- [Node.js](https://nodejs.org/en/)
 
 To install, please clone this repository into your local computer by running the following command in your terminal: 
 
-1. `git clone https://github.com/cheungdzinyung/address.git`
+1.  
+```markdown 
+git clone https://github.com/cheungdzinyung/address.git` 
+```
 2. `cd address`
 3. `yarn install`
 
