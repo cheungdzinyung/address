@@ -17,6 +17,9 @@ The data used in the application is generated using the https://randomuser.me/ a
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project will require the following software to be installed to function:
+- [Node.js](https://nodejs.org/en/download/)
+
 ### Available Scripts
 
 In the project directory, you can run:
