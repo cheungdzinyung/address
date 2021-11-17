@@ -1,6 +1,6 @@
 # Address Book Application
 
-![Alt Text](./src/assets/images/address-book-thumbnail.png)
+![Address Book Image](./src/assets/images/address-book-thumbnail.png)
 
 This is an address book application to allow users to:
 
@@ -19,6 +19,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project will require the following software to be installed to function:
 - [Node.js](https://nodejs.org/en/download/)
+
+To install, please clone this repository into your local computer by running the following command in your terminal: 
+
+1. `git clone https://github.com/cheungdzinyung/address.git`
+2. `cd address`
+3. `yarn install`
 
 ### Available Scripts
 
