@@ -9,3 +9,9 @@
   color: #2d2d2d;
   border-radius: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .contactDetails {
+    padding: 50px;
+  }
+}
