@@ -116,12 +116,14 @@ Given more time I would have liked to complete the following:
   - time to complete (1 day)
 - Implement end-to-end testing
   - time to complete (1.5 day)
+- complete 
 
 ### Given more time, what else would you have done to make the project more robust?
 
 Given more time, I would have like to include the following to make the project more robust:
 
 - CSS theming
+- Use additional linting tools (style/commit)
 - Implement TypeScript into project to provide stricter type checking and reduce errors
 - Implement [Storybook](https://storybook.js.org/) in order to provide designer(s) and client(s) a visual tool to better understand the various levels of components
 - Allow the users to manually insert data rather than fetching data from https://randomuser.me/
@@ -137,6 +139,6 @@ Given more time, I would have like to include the following to make the project 
   - QA
   - Feature
   - Bug Fix
-- Implement self-managed cloud infrastructure using AWS giving more control over different functionalities and features sch as database integration
+- Implement self-managed cloud infrastructure using AWS giving more control over different functionalities and features sch as database integration. ******Can also integrate testing before deployment******
 - A11y implementation to increase accessibility to all people, including those with disabilities or impairments 
 - i18n implementation to allow for internationalization of contents
