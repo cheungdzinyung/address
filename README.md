@@ -17,20 +17,22 @@ The data used in the application is generated using the https://randomuser.me/ a
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project will require the following software to be installed to function:
-- [Node.js](https://nodejs.org/en/)
+This project will require [Node.js](https://nodejs.org/en/) to be installed to run. Please ensure you have installed the latest stable version onto your computer before running the application.
 
-To install, please clone this repository into your local computer by running the following command in your terminal: 
-  
-``` 
+To install the project, please clone this repository into your local computer by running the following command in your terminal:
+
+```
 git clone https://github.com/cheungdzinyung/address.git
 cd address
 yarn install
 ```
 
+## Development
+
 ### Available Scripts
 
-#### `Development Mode`
+#### Development Mode
+
 In the project directory, you can run:
 
 ```
@@ -42,8 +44,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-#### `Testing`
+
+#### Testing
+
 In the project directory, you can run:
+
 ```
 yarn test
 ```
@@ -51,8 +56,10 @@ yarn test
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-#### `Production Build`
+#### Production Build
+
 In the project directory, you can run:
+
 ```
 yarn build
 ```
@@ -65,31 +72,25 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### `Ejecting Single Build Dependency`
-In the project directory, you can run:
-```
-yarn eject
-```
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-### Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application is currently deployed using [Netlify](https://www.netlify.com/) at the following address:
+https://address-book-nuvalence-acdy.netlify.app/. The deployment process utilizes CI/CD and is triggered by GitHub repository updates. The production application is distributed using Netlify's CDN. To implement update to the live production site, push the production-ready application to the "Main" branch of the GitHub repository.
 
 ## Assignment Summary
 
 ### Overall Approach
 
-The overall approach to the project was to first understand the minimum requirements of the challenge.
+The overall approach to the project was to first understand the minimum requirements of the challenge which was listed in the `Suggested UX Hint` and `Deliverables` section:
+
+- User should see the list of persons from the address book
+- User should be able to select a person from the list and navigate to the details page
+- User should be able to see the first name, last name, phone number on the details page
+- A README file containing:
+  - Deployment/running instructions
+  - Assignment summary
+
+After understanding the requirements, a simple mockup was created using [Figma](https://www.figma.com/) in order to understand the various visual and functional components required for the application. The components were divided using the Atomic Design Pattern (atoms, molecules, organisms, etc.).
 
 ### Implemented Features
 
@@ -113,16 +114,29 @@ Given more time I would have liked to complete the following:
   - time to complete (1 day)
 - Include a scrolling side bar to quickly access contacts with the first letter of the last name
   - time to complete (1 day)
-- Integrate CI/CD (1 day)
+- Implement end-to-end testing
+  - time to complete (1.5 day)
 
 ### Given more time, what else would you have done to make the project more robust?
 
 Given more time, I would have like to include the following to make the project more robust:
 
+- CSS theming
+- Implement TypeScript into project to provide stricter type checking and reduce errors
+- Implement [Storybook](https://storybook.js.org/) in order to provide designer(s) and client(s) a visual tool to better understand the various levels of components
 - Allow the users to manually insert data rather than fetching data from https://randomuser.me/
-- Implement a user login/logout function to ensure that only the intended user can access these personal information
-- Implement voice search
+- Implement a user login/logout function to ensure that only the intended user can access these personal information ([OAuth2](https://oauth.net/2/) and [JWT](https://jwt.io/))
 - A settings menu to allow users to choose and save preferences:
   - Choose to sort contacts by different attributes
   - Choose to sort contacts by ascending or descending order
   - Choose what information to be displayed
+- Implement voice search
+- Separate out the different branches of the GitHub repo to include:
+  - Development
+  - Main
+  - QA
+  - Feature
+  - Bug Fix
+- Implement self-managed cloud infrastructure using AWS giving more control over different functionalities and features sch as database integration
+- A11y implementation to increase accessibility to all people, including those with disabilities or impairments 
+- i18n implementation to allow for internationalization of contents
