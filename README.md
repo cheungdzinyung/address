@@ -17,7 +17,7 @@ The data used in the application is generated using the https://randomuser.me/ a
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project will require [Node.js](https://nodejs.org/en/) to be installed to run. Please ensure you have installed the latest stable version onto your computer before running the application.
+This project will require [Node.js](https://nodejs.org/en/) to be installed to run. Please ensure you have installed the latest stable version onto your computer before running the application. [Yarn](https://yarnpkg.com/) is also suggested to be used as the package manager.
 
 To install the project, please clone this repository into your local computer by running the following command in your terminal:
 
@@ -107,7 +107,7 @@ After understanding the requirements, a simple mockup was created using [Figma](
 Other than the suggested UX hints provided, the additional features implemented included:
 
 - Automatic sorting of data (ascending order by last name)
-- Search and filter of summary list (by first or last name)
+- Filtering of contact list by user input (by first or last name)
 - Loading screen when fetching data
 - Unit testing with Jest
 - E2E testing with Cypress
@@ -121,7 +121,7 @@ Given more time I would have liked to complete the following:
   - time to completed (0.5 days)
 - Allow users to choose ascending or descending order for sorts
   - time to complete (0.5 days)
-- Infinite scroll
+- Infinite scroll / pagination
   - time to complete (1 day)
 - Separate contacts into section grouping by the first letter of the last name
   - time to complete (1 day)
