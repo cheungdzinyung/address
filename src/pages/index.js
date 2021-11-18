@@ -1,3 +1,3 @@
 export * from "./AddressBookPage";
-export * from "./DetailPage";
-export * from "./NotFound";
+export * from "./ContactDetailsPage";
+export * from "./NotFoundPage";
