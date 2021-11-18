@@ -1,0 +1,11 @@
+.contactDetails {
+  margin: 25px auto;
+  padding: 75px;
+  width: auto;
+  display: inline-block;
+  background-color: #d8d8d8;
+  border: 1px solid #e7e7e7;
+  box-shadow: 5px 5px 5px #ccc;
+  color: #2d2d2d;
+  border-radius: 20px;
+}
