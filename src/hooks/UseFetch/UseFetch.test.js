@@ -14,7 +14,7 @@ describe("useFetch", () => {
       })
     );
 
-    const { result, waitForNextUpdate } = renderHook(() => useFetch("test"));
+    const { result, waitForNextUpdate } = renderHook(() => useFetch("test", true));
 
     await waitForNextUpdate(); // used so that will change the state for loading in order to run next set of codes
 
@@ -30,7 +30,7 @@ describe("useFetch", () => {
       })
     );
 
-    const { result, waitForNextUpdate } = renderHook(() => useFetch("test"));
+    const { result, waitForNextUpdate } = renderHook(() => useFetch("test", true));
 
     await waitForNextUpdate();
 
@@ -46,7 +46,7 @@ describe("useFetch", () => {
       });
     });
 
-    const { result, waitForNextUpdate } = renderHook(() => useFetch("test"));
+    const { result, waitForNextUpdate } = renderHook(() => useFetch("test", true));
 
     act(() => {
       // not wait for state change to do something
@@ -56,5 +56,19 @@ describe("useFetch", () => {
     });
 
     await waitForNextUpdate(); // wait for the rest fo the function to finish or else will warning
+  });
+
+  it("should be in initial state when refetch is not needed", async () => {
+    jest.spyOn(global, "fetch").mockImplementation(() => {
+      Promise.resolve({
+        json: () => Promise.resolve({ test: "1" }),
+      });
+    });
+
+    const { result, waitForNextUpdate } = renderHook(() => useFetch("test", false));
+
+    expect(result.current.data).toBe(null);
+    expect(result.current.isLoading).toBe(false);
+    expect(result.current.hasError).toBe(false);
   });
 });
