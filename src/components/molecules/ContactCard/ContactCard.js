@@ -5,7 +5,7 @@ import styles from "./ContactCard.module.css";
 export const ContactCard = ({ contact }) => (
   <div className={styles.contactCard}>
     <Link to={`contact/${contact.login.uuid}`} state={contact}>
-      <img src={contact.picture.medium} alt="avatar" />
+      <img src={contact.picture.medium} alt={`${contact.name.first} ${contact.name.last}`} />
       {contact.name.title}. {contact.name.first} {contact.name.last}
     </Link>
   </div>

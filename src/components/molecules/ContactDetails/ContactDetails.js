@@ -10,7 +10,10 @@ export const ContactDetails = () => {
     <div className={styles.contactDetails}>
       {contact && (
         <>
-          <img src={contact.picture.large} alt="profile" />
+          <img
+            src={contact.picture.large}
+            alt={`${contact.name.first} ${contact.name.last}`}
+          />
           <h2>
             {contact.name.title}. {contact.name.first} {contact.name.last}
           </h2>
