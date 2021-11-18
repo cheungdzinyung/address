@@ -9,7 +9,7 @@ Object {
         class="contactDetails"
       >
         <img
-          alt="profile"
+          alt="undefined undefined"
           src="test"
         />
         <h2>
@@ -33,7 +33,7 @@ Object {
       class="contactDetails"
     >
       <img
-        alt="profile"
+        alt="undefined undefined"
         src="test"
       />
       <h2>
