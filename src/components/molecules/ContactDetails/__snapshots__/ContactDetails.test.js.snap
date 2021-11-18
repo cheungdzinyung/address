@@ -1,50 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContactDetails should render with user info 1`] = `
+exports[`ContactDetails should render contact info 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
+      <div
+        class="contactDetails"
+      >
         <img
           alt="profile"
           src="test"
         />
-        <h1>
+        <h2>
           . 
            
-        </h1>
-        <h2>
+        </h2>
+        <h3>
           Phone: 
           phone123
            
-        </h2>
-        <h2>
+        </h3>
+        <h3>
           Cell: 
           cel213
-        </h2>
+        </h3>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
+    <div
+      class="contactDetails"
+    >
       <img
         alt="profile"
         src="test"
       />
-      <h1>
+      <h2>
         . 
          
-      </h1>
-      <h2>
+      </h2>
+      <h3>
         Phone: 
         phone123
          
-      </h2>
-      <h2>
+      </h3>
+      <h3>
         Cell: 
         cel213
-      </h2>
+      </h3>
     </div>
   </div>,
   "debug": [Function],

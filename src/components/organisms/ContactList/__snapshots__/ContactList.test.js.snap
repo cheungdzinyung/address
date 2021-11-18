@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContactList should render with users 1`] = `
+exports[`ContactList should render with contacts 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
+      <div
+        class="contactList"
+      >
         <div>
           Andrew 01
         </div>
@@ -16,7 +18,9 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
+    <div
+      class="contactList"
+    >
       <div>
         Andrew 01
       </div>

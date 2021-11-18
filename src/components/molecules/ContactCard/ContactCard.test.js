@@ -1,8 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { ContactCard } from "./ContactCard";
-import Router from "react-router-dom";
 import { MemoryRouter } from "react-router-dom";
+import { ContactCard } from "./ContactCard";
 
 describe("ContactCard", () => {
   afterEach(() => {
@@ -15,7 +14,7 @@ describe("ContactCard", () => {
         <ContactCard
           user={{
             login: { uuid: 1 },
-            picture: { thumbnail: "test" },
+            picture: { medium: "test" },
             name: { title: "Mr", first: "Andrew", last: "Cheung" },
           }}
         />

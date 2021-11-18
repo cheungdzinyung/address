@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddressBook should render with 1 user 1`] = `
+exports[`AddressBook should render with 1 contact 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
+      <div
+        class="addressBook"
+      >
         <input
           class="searchBar"
           placeholder="type to search by first or last name"
@@ -20,7 +22,9 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
+    <div
+      class="addressBook"
+    >
       <input
         class="searchBar"
         placeholder="type to search by first or last name"
@@ -87,12 +91,14 @@ Object {
 }
 `;
 
-exports[`AddressBook should render with 3 users 1`] = `
+exports[`AddressBook should render with 3 contacts 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
+      <div
+        class="addressBook"
+      >
         <input
           class="searchBar"
           placeholder="type to search by first or last name"
@@ -113,7 +119,9 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
+    <div
+      class="addressBook"
+    >
       <input
         class="searchBar"
         placeholder="type to search by first or last name"

@@ -23,7 +23,7 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
+    <div class="contactCard">
       <a
         href="/contact/1"
       >
