@@ -1,17 +1,13 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SummaryPage from "../pages/SummaryPage";
-import DetailPage from "../pages/DetailPage";
+import { AddressBookPage, DetailPage, NotFound } from "../pages";
 
-const Router = ({ users }) => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<SummaryPage users={users} />} />
-        <Route path="/user/:uuid" element={<DetailPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
-
-export default Router;
+export const Router = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<AddressBookPage />} />
+      <Route path="/contact/:uuid" element={<DetailPage />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </BrowserRouter>
+);
