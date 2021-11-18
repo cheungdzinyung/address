@@ -1,5 +1,11 @@
+.addressBook {
+  width: 80vw;
+  margin: auto;
+  padding: 30px 0;
+}
+
 .searchBar {
-  width: 30rem;
+  width: 80%;
   background: white;
   padding: 10px;
 }

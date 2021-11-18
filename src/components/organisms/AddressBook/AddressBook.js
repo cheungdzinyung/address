@@ -14,7 +14,7 @@ export const AddressBook = ({ contacts }) => {
         );
 
   return (
-    <div>
+    <div className={styles.addressBook}>
       <input
         className={styles.searchBar}
         value={search}
