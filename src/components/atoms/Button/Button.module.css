@@ -15,10 +15,10 @@
 
 .button:hover {
   cursor: pointer;
+  background-color: #8cbfcc;
 }
 
 a {
   text-decoration: none;
   color: black;
-
 }
