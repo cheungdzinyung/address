@@ -10,6 +10,11 @@
   box-shadow: 5px 5px 5px #ccc;
   background-color: #fff;
 }
+.contactCard:hover {
+  background-color: #8cbfcc;
+  border-color: #8cbfcc;
+  box-shadow: unset;
+}
 
 .contactCard > a {
   display: flex;
