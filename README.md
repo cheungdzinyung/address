@@ -45,7 +45,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-#### Testing
+#### Unit Testing
 
 In the project directory, you can run:
 
@@ -55,6 +55,16 @@ yarn test
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+#### End-to-End Testing
+
+In the project directory, you can run:
+
+```
+yarn e2e-gui
+```
+
+Launches cypress test runner for e2e testing. Please see the section about [test runner](https://docs.cypress.io/guides/core-concepts/test-runner) for more information.
 
 #### Production Build
 
@@ -116,7 +126,7 @@ Given more time I would have liked to complete the following:
   - time to complete (1 day)
 - Implement end-to-end testing
   - time to complete (1.5 day)
-- complete 
+- complete
 
 ### Given more time, what else would you have done to make the project more robust?
 
@@ -139,6 +149,6 @@ Given more time, I would have like to include the following to make the project 
   - QA
   - Feature
   - Bug Fix
-- Implement self-managed cloud infrastructure using AWS giving more control over different functionalities and features sch as database integration. ******Can also integrate testing before deployment******
-- A11y implementation to increase accessibility to all people, including those with disabilities or impairments 
+- Implement self-managed cloud infrastructure using AWS giving more control over different functionalities and features sch as database integration. **\*\***Can also integrate testing before deployment**\*\***
+- A11y implementation to increase accessibility to all people, including those with disabilities or impairments
 - i18n implementation to allow for internationalization of contents
