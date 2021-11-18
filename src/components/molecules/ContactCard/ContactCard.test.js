@@ -12,7 +12,7 @@ describe("ContactCard", () => {
     const component = render(
       <MemoryRouter>
         <ContactCard
-          user={{
+          contact={{
             login: { uuid: 1 },
             picture: { medium: "test" },
             name: { title: "Mr", first: "Andrew", last: "Cheung" },

@@ -5,7 +5,9 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
+      <div
+        class="contactCard"
+      >
         <a
           href="/contact/1"
         >
@@ -23,7 +25,9 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div class="contactCard">
+    <div
+      class="contactCard"
+    >
       <a
         href="/contact/1"
       >
