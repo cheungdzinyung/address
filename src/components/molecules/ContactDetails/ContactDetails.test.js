@@ -11,7 +11,7 @@ const mockUseLocationValue = {
     name: "Andrew",
     picture: { large: "test" },
     phone: "phone123",
-    cell: "cel213",
+    cell: "cell123",
   },
 };
 
@@ -32,7 +32,7 @@ describe("ContactDetails", () => {
     const phoneElement = screen.getByText(/phone123/i);
     expect(phoneElement).toBeInTheDocument();
 
-    const cellElement = screen.getByText(/cel213/i);
+    const cellElement = screen.getByText(/cell123/i);
     expect(cellElement).toBeInTheDocument();
 
     expect(component).toMatchSnapshot();
