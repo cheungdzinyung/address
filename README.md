@@ -109,6 +109,9 @@ Other than the suggested UX hints provided, the additional features implemented 
 - Automatic sorting of data (ascending order by last name)
 - Search and filter of summary list (by first or last name)
 - Loading screen when fetching data
+- Unit testing with Jest
+- E2E testing with Cypress
+- CI/CD deployment with Netlify
 
 ### Given more time, what else would you have liked to complete and how long it would have taken you?
 
@@ -124,9 +127,6 @@ Given more time I would have liked to complete the following:
   - time to complete (1 day)
 - Include a scrolling side bar to quickly access contacts with the first letter of the last name
   - time to complete (1 day)
-- Implement end-to-end testing
-  - time to complete (1.5 day)
-- complete
 
 ### Given more time, what else would you have done to make the project more robust?
 
@@ -149,6 +149,6 @@ Given more time, I would have like to include the following to make the project 
   - QA
   - Feature
   - Bug Fix
-- Implement self-managed cloud infrastructure using AWS giving more control over different functionalities and features sch as database integration. **\*\***Can also integrate testing before deployment**\*\***
+- Implement self-managed cloud infrastructure using AWS giving more control over different functionalities and features such as database integration and integrating test checking before deployment
 - A11y implementation to increase accessibility to all people, including those with disabilities or impairments
 - i18n implementation to allow for internationalization of contents
