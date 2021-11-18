@@ -19,7 +19,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "lint": "eslint -c .eslintrc --ext .js,.jsx,.json ./src"
+    "lint": "eslint -c .eslintrc --ext .js,.jsx,.json ./src",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "e2e": "yarn start-server-and-test start http://localhost:3000 cy:run",
+    "e2e-gui": "yarn start-server-and-test start http://localhost:3000 cy:open"
   },
   "browserslist": {
     "production": [
@@ -34,10 +38,15 @@
     ]
   },
   "devDependencies": {
+    "@cypress/react": "^5.10.3",
+    "@cypress/webpack-dev-server": "^1.7.0",
+    "cypress": "^9.0.0",
     "eslint-config-airbnb": "^19.0.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1"
+    "html-webpack-plugin": "4",
+    "start-server-and-test": "^1.14.0"
   }
 }

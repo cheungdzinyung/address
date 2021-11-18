@@ -3,7 +3,8 @@
     "react-app",
     "react-app/jest",
     "airbnb-base",
-    "prettier"
+    "prettier",
+    "plugin:cypress/recommended"
   ],
   "plugins": ["prettier"],
   "rules": {
