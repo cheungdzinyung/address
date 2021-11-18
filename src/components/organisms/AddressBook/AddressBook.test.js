@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { render, screen } from "@testing-library/react";
 import { AddressBook } from "./AddressBook";
-import Router from "react-router-dom";
 
 const contacts = [
   {
@@ -67,11 +66,10 @@ describe("AddressBook", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("should render with 1 contact", async () => {
-    //did not mock user input through input box, simply mocked state change
+  it("should render with 1 contact", async () => { // did not mock user input through input box, simply mocked state change
     const mockSetState = jest.fn();
 
-    useStateMock.mockImplementation((initialState) => ["Test", mockSetState]);
+    useStateMock.mockImplementation(() => ["Test", mockSetState]);
 
     const component = render(<AddressBook contacts={contacts} />);
     const inputElements = screen.getAllByRole("textbox");

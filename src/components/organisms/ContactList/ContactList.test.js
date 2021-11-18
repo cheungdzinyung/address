@@ -1,7 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { ContactList } from "./ContactList";
-import Router from "react-router-dom";
 
 const contacts = [
   {
